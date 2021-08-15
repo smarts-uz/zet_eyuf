@@ -233,7 +233,7 @@ echo $this->require( '/webhtm/cpas/blocks/header.php');
                         'width' => '150px',
                         'value' => function ($cpasLand, $key, $index, DataColumn $dataColumn) use ($newModel) {
 
-                            $path = '/uploaz/' . App . '/' . $newModel->className . '/' . 'screen/' . ZArrayHelper::getValue($cpasLand, 'id') . '/' . ZArrayHelper::getValue(ZArrayHelper::getValue($cpasLand, 'screen'), 0) ;
+                            $path = '/upload/uploaz/' . App . '/' . $newModel->className . '/' . 'screen/' . ZArrayHelper::getValue($cpasLand, 'id') . '/' . ZArrayHelper::getValue(ZArrayHelper::getValue($cpasLand, 'screen'), 0) ;
                             return <<<HTML
                 <img src="$path" style="width: 100px; height: 60px;">          
 HTML;

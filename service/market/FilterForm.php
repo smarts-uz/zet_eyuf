@@ -117,7 +117,7 @@ class FilterForm extends ZFrame
         foreach ($shop_brands->image as $brand) {
             $brand_data[] = ZImageWidget::widget([
                 'config' => [
-                    'url' => '/uploaz/ShopBrand/image/' . $brand,
+                    'url' => '/upload/uploaz/ShopBrand/image/' . $brand,
                     'class' => "ml-20",
                     'width' => '90%',
                 ]

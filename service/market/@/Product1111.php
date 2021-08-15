@@ -632,7 +632,7 @@ class Product1111 extends ZFrame
             //$companyItem->amount = $catalog->amount;
             $companyItem->title = $company->title;
             if (\Dash\count($company->photo)) {
-                $path = '/uploaz/eyuf/UserCompany/photo/' . $company->id . '/' . $company->photo[0];
+                $path = '/upload/uploaz/eyuf/UserCompany/photo/' . $company->id . '/' . $company->photo[0];
                 if (file_exists($path)) {
                     $companyItem->image = $path;
                 } else {
@@ -783,7 +783,7 @@ class Product1111 extends ZFrame
         $brand = $this->core_brands->where('id', $shop_product->shop_brand_id)->first();
         if ($brand !== null) {
             $item->brand = $brand->name ?? 'not found';
-            $item->brandImage = '/uploaz/' . App . '/ShopBrand/image/' . $brand->id . '/' . ZArrayHelper::getValue($brand->image, 0);
+            $item->brandImage = '/upload/uploaz/' . App . '/ShopBrand/image/' . $brand->id . '/' . ZArrayHelper::getValue($brand->image, 0);
         }
         $item->title = $shop_product->title;
         $item->text = $shop_product->text;
@@ -833,7 +833,7 @@ class Product1111 extends ZFrame
         $item->images = [];
         if (is_array($shop_product->image))
             foreach ($shop_product->image as $image) {
-                $path = '/uploaz/eyuf/CoreProduct/images/' . $shop_product->id . '/' . $image;
+                $path = '/upload/uploaz/eyuf/CoreProduct/images/' . $shop_product->id . '/' . $image;
                 if (file_exists(Root . '/upload/' . $path))
                     $item->images[] = $path;
             }
@@ -1058,7 +1058,7 @@ class Product1111 extends ZFrame
 
         /*if ($shop_product->image !== null)
             foreach ($shop_product->image as $image)
-                $productItem->images[] = '/uploaz/eyuf/CoreProduct/images/' . $shop_product->id . '/' . $image;*/
+                $productItem->images[] = '/upload/uploaz/eyuf/CoreProduct/images/' . $shop_product->id . '/' . $image;*/
         if (\Dash\count($productItem->images) == 0)
             $productItem->images[] = $this->defaultProductImage;
 
@@ -1748,11 +1748,11 @@ class Product1111 extends ZFrame
 
         foreach ($allBrands as $brand) {
             $a = ZArrayHelper::getValue($brand->image, 0);
-            //vdd('/uploaz/' . App . '/ShopBrand/image/' . $brand->id . '/' . $a);
-            //$brand_data[$brand->id] = "<img  src='/uploaz/".App."/ShopBrand/image/".$brand->id."/$a' alt=' '>";
+            //vdd('/upload/uploaz/' . App . '/ShopBrand/image/' . $brand->id . '/' . $a);
+            //$brand_data[$brand->id] = "<img  src='/upload/uploaz/".App."/ShopBrand/image/".$brand->id."/$a' alt=' '>";
             $brand_data[$brand->id] = ZImageWidget::widget([
                 'config' => [
-                    'url' => '/uploaz/' /*. App*/ . '/ShopBrand/image/' /*. $brand->id . '/' */ . $a,
+                    'url' => '/upload/uploaz/' /*. App*/ . '/ShopBrand/image/' /*. $brand->id . '/' */ . $a,
                     'class' => "ml-20",
                     'width' => '90%',
                 ]
@@ -2115,7 +2115,7 @@ class Product1111 extends ZFrame
                 'id' => $company->id ?? null
             ]);
             if (\Dash\count($company->photo))
-                $companyItem->image = '/uploaz/eyuf/UserCompany/photo/' . $company->id . '/' . $company->photo[0];
+                $companyItem->image = '/upload/uploaz/eyuf/UserCompany/photo/' . $company->id . '/' . $company->photo[0];
 
             $item = new ProductItem();
             $companyItem->currency = $item->currency;

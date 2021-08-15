@@ -81,7 +81,7 @@ ZCardWidget::begin([
                     'type' => ZNewsCardWidget::type['three'],
                     'id' => $text->id,
                     'title' => $text->text,
-                    'imgUrl' => '/uploaz/eyuf/corenews/news/' . $text->id . '/' . ZArrayHelper::getValue($text->image, 0),
+                    'imgUrl' => '/upload/uploaz/eyuf/corenews/news/' . $text->id . '/' . ZArrayHelper::getValue($text->image, 0),
                     'subTitle' => $text->name,
                     'time' => $text->created_at,
                 ]
@@ -106,7 +106,7 @@ ZCardWidget::begin([
                     'type' => ZNewsCardWidget::type['one'],
                     'id' => $center->id,
                     'title' => $center->text,
-                    'imgUrl' => '/uploaz/eyuf/corenews/news/' . $center->id . '/' . ZArrayHelper::getValue($center->image, 0),
+                    'imgUrl' => '/upload/uploaz/eyuf/corenews/news/' . $center->id . '/' . ZArrayHelper::getValue($center->image, 0),
                     'subTitle' => $center->name,
                     'time' => $center->created_at,
                 ]
@@ -138,7 +138,7 @@ ZCardWidget::begin([
                             'id' => $t->id,
                             'type' => ZNewsCardWidget::type['two'],
                             'title' => $t->name,
-                            'imgUrl' => '/uploaz/eyuf/corenews/news/' . $t->id . '/' . ZArrayHelper::getValue($t->image, 0),
+                            'imgUrl' => '/upload/uploaz/eyuf/corenews/news/' . $t->id . '/' . ZArrayHelper::getValue($t->image, 0),
                             'time' => $t->created_at,
                             'text' => $t->title,
                         ]

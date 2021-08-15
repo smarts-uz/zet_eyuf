@@ -54,7 +54,7 @@ class Banner extends ZFrame
     {
         $currentLang = Az::$app->language;
 
-        $imageUrl = '/tempz/eyuf/ShopBanner/image/0/';
+        $imageUrl = '/upload/tempz/eyuf/ShopBanner/image/0/';
 
         $imagesWithFullUrl = [];
 

@@ -205,7 +205,7 @@ $model1 = \zetsoft\models\cpas\CpasStreamItem::find()
         <div class="col-md-3 d-flex justify-content-center">
 
             <img width="auto" height="120px"
-                 src="<?= '/uploaz/' . App . '/' . $offer->className . '/' . 'photos/' . $offer->id . '/' . ZArrayHelper::getValue($offer->photo, 0) ?>"
+                 src="<?= '/upload/uploaz/' . App . '/' . $offer->className . '/' . 'photos/' . $offer->id . '/' . ZArrayHelper::getValue($offer->photo, 0) ?>"
                  alt="rasm" style="max-width: 100%">
 
         </div>

@@ -427,7 +427,7 @@ class Menus extends ZFrame
             $imageApp = ZArrayHelper::getValue($image->image, 0);
 
             $menuItem->url = $image->url;
-            $menuItem->image = '/uploaz/' . $this->bootEnv('appTitle') . "/CoreMenuImage/image/$image->id/" . $imageApp;
+            $menuItem->image = '/upload/uploaz/' . $this->bootEnv('appTitle') . "/CoreMenuImage/image/$image->id/" . $imageApp;
             $menuItem->target = $image->target;
             $menuItem->tooltip = $image->title;
             $menuItem->location = $image->location;

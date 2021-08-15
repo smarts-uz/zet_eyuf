@@ -71,7 +71,7 @@ $id = $this->httpGet('id');
                     'type' => ZNewsCardWidget::type['four'],
                     'subTitle' => $current->name,
                     'title' => $current->title,
-                    'imgUrl' => '/uploaz/eyuf/News/image/' 
+                    'imgUrl' => '/upload/uploaz/eyuf/News/image/'
                         . $current->id . '/' 
                         . ZArrayHelper::getValue($current->image, 0),
                     'text' => $current->text,
@@ -111,7 +111,7 @@ $id = $this->httpGet('id');
                                     'id' => $news->id,
                                     'type' => ZNewsCardWidget::type['two'],
                                     'title' => $news->name,
-                                    'imgUrl' => '/uploaz/eyuf/News/image/' 
+                                    'imgUrl' => '/upload/uploaz/eyuf/News/image/'
                                     . $news->id . '/' 
                                     . ZArrayHelper::getValue($news->image, 0),
                                     'time' => $news->created_at,

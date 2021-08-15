@@ -148,7 +148,7 @@ CSS,
                     '{class}' => $this->_config['class'],
                 ]);
         }
-        $home="/uploaz/eyuf/CoreAdvancedItem/image/";
+        $home="/upload/uploaz/eyuf/CoreAdvancedItem/image/";
         foreach ($items as $value){$slide_code .= ZAzCardWidget::widget([
             'config'=>[
                 'url' =>$home.$value->id .'/'.$value->image[0],

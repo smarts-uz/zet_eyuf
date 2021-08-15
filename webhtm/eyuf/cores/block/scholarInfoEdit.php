@@ -83,7 +83,7 @@ JS,
     }
     ZModalNewWidget::end();
     /* end|AzimjonToirov|24-10-2020 */
-    $userImage = '/uploaz/eyuf/User/photo/' . $user->id . '/' . ZArrayHelper::getValue($user->photo, 0);
+    $userImage = '/upload/uploaz/eyuf/User/photo/' . $user->id . '/' . ZArrayHelper::getValue($user->photo, 0);
 
     $photoUrl = $this->userPhoto();
     if (!empty($user->photo))

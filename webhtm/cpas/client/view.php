@@ -127,7 +127,7 @@ echo $this->require( '\webhtm\cpas\blocks\header.php');
                     <div class="px-4 pb-3">
 
                         <img class="rounded w-100"
-                             src="<?= '/uploaz/' . App . '/' . $model->className . '/' . 'photo/' . $model->id . '/' . ZArrayHelper::getValue($model->photo, 0) ?>"
+                             src="<?= '/upload/uploaz/' . App . '/' . $model->className . '/' . 'photo/' . $model->id . '/' . ZArrayHelper::getValue($model->photo, 0) ?>"
                         />
 
                     </div>
@@ -177,7 +177,7 @@ echo $this->require( '\webhtm\cpas\blocks\header.php');
                     </div>
 
                     <?
-                    $toPath = '/uploaz/' . App . '/' . $model->className . '/' . 'photos/' . $model->id;
+                    $toPath = '/upload/uploaz/' . App . '/' . $model->className . '/' . 'photos/' . $model->id;
                     $dir = Root.'/upload'.$toPath;
                     
                     if (is_dir($dir)){
@@ -195,7 +195,7 @@ echo $this->require( '\webhtm\cpas\blocks\header.php');
                      ?>
 
                     <?
-                    $toPath = '/uploaz/' . App . '/' . $model->className . '/' . 'promo/' . $model->id;
+                    $toPath = '/upload/uploaz/' . App . '/' . $model->className . '/' . 'promo/' . $model->id;
                     $dir = Root.'/upload'.$toPath;
 
                     if (is_dir($dir)){
@@ -326,7 +326,7 @@ echo $this->require( '\webhtm\cpas\blocks\header.php');
                                 'width' => '100px',
                                 'value' => function ($cpasLand, $key, $index, DataColumn $dataColumn) use ($model, $cpasLands) {
 
-                                    $path = '/uploaz/' . App . '/' . $cpasLands->className . '/' . 'screen/' . ZArrayHelper::getValue($cpasLand, 'id') . '/' . ZArrayHelper::getValue(ZArrayHelper::getValue($cpasLand, 'screen'), 0) ;
+                                    $path = '/upload/uploaz/' . App . '/' . $cpasLands->className . '/' . 'screen/' . ZArrayHelper::getValue($cpasLand, 'id') . '/' . ZArrayHelper::getValue(ZArrayHelper::getValue($cpasLand, 'screen'), 0) ;
 
                                     return <<<HTML
                 <img src="$path" style="width: 100px; height: 100px;">          

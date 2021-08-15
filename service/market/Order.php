@@ -1113,7 +1113,7 @@ class Order extends ZFrame
 
             $item = new ShopOrderItemDForm();
             $item->id = ++$i;
-            $item->image = '/uploaz/' . App . '/ShopProduct/image/' . $product->id . '/' . ZArrayHelper::getValue($product->image, 0);
+            $item->image = '/upload/uploaz/' . App . '/ShopProduct/image/' . $product->id . '/' . ZArrayHelper::getValue($product->image, 0);
             $item->name = $product->name;
             $item->amount = $orderItem->amount;
             $item->price = $orderItem->price;

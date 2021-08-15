@@ -201,7 +201,7 @@ $model->columns();
         <div class="col-md-3">
 
             <img width="100%" height="auto"
-                 src="<?= '/uploaz/' . App . '/' . $offer->className . '/' . 'photos/' . $offer->id . '/' . ZArrayHelper::getValue($offer->photos, 0) ?>"
+                 src="<?= '/upload/uploaz/' . App . '/' . $offer->className . '/' . 'photos/' . $offer->id . '/' . ZArrayHelper::getValue($offer->photos, 0) ?>"
                  alt="rasm">
 
         </div>

@@ -80,7 +80,7 @@ if ($offer)
 
                     <a href="<?= $viewUrl ?>">
                         <img class="rounded img-fluid" style="height: 110px;"
-                             src="<?= '/uploaz/' . App . '/CpasOffer/' . 'photo/' . $offer->id . '/' . ZArrayHelper::getValue($offerPhoto, 0)?>"
+                             src="<?= '/upload/uploaz/' . App . '/CpasOffer/' . 'photo/' . $offer->id . '/' . ZArrayHelper::getValue($offerPhoto, 0)?>"
                              alt="img">
                     </a>
 

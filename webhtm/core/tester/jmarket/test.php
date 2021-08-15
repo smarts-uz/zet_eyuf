@@ -91,39 +91,39 @@ Az::$app->maps->map->testtwo();
                         <div class="lilo-accordion-content" style="display: block;"><div id="container-w36" class="parent-div-div MEasySelectable">
                                 <ul id="easySelectable" class="easySelectable flex justify-content-around parrentbody row rmrl-container" rmrl-elemid="0">
                                     <li class="es-selectable col-md-3" data-value="1">
-                                        <img src="/uploaz//ShopBrand/image/TomFord.png" class="ml-20 marketImg">
+                                        <img src="/upload/uploaz//ShopBrand/image/TomFord.png" class="ml-20 marketImg">
                                     </li>        <li class="es-selectable col-md-3" data-value="2">
-                                        <img src="/uploaz//ShopBrand/image/bmw.jpg" class="ml-20 marketImg">
+                                        <img src="/upload/uploaz//ShopBrand/image/bmw.jpg" class="ml-20 marketImg">
                                     </li>        <li class="es-selectable col-md-3" data-value="3">
-                                        <img src="/uploaz//ShopBrand/image/huawei.jpg" class="ml-20 marketImg">
+                                        <img src="/upload/uploaz//ShopBrand/image/huawei.jpg" class="ml-20 marketImg">
                                     </li>        <li class="es-selectable col-md-3" data-value="4" style="display: none;">
-                                        <img src="/uploaz//ShopBrand/image/TommyHilfiger.png" class="ml-20 marketImg">
+                                        <img src="/upload/uploaz//ShopBrand/image/TommyHilfiger.png" class="ml-20 marketImg">
                                     </li>        <li class="es-selectable col-md-3" data-value="5" style="display: none;">
-                                        <img src="/uploaz//ShopBrand/image/gucci.png" class="ml-20 marketImg">
+                                        <img src="/upload/uploaz//ShopBrand/image/gucci.png" class="ml-20 marketImg">
                                     </li>        <li class="es-selectable col-md-3" data-value="6" style="display: none;">
-                                        <img src="/uploaz//ShopBrand/image/levis.png" class="ml-20 marketImg">
+                                        <img src="/upload/uploaz//ShopBrand/image/levis.png" class="ml-20 marketImg">
                                     </li>        <li class="es-selectable col-md-3" data-value="7" style="display: none;">
-                                        <img src="/uploaz//ShopBrand/image/mercedesbenz.jpg" class="ml-20 marketImg">
+                                        <img src="/upload/uploaz//ShopBrand/image/mercedesbenz.jpg" class="ml-20 marketImg">
                                     </li>        <li class="es-selectable col-md-3" data-value="8" style="display: none;">
-                                        <img src="/uploaz//ShopBrand/image/lg.png" class="ml-20 marketImg">
+                                        <img src="/upload/uploaz//ShopBrand/image/lg.png" class="ml-20 marketImg">
                                     </li>        <li class="es-selectable col-md-3" data-value="9" style="display: none;">
-                                        <img src="/uploaz//ShopBrand/image/lg.jpg" class="ml-20 marketImg">
+                                        <img src="/upload/uploaz//ShopBrand/image/lg.jpg" class="ml-20 marketImg">
                                     </li>        <li class="es-selectable col-md-3" data-value="10" style="display: none;">
-                                        <img src="/uploaz//ShopBrand/image/HP-logo-2010–2012.jpg" class="ml-20 marketImg">
+                                        <img src="/upload/uploaz//ShopBrand/image/HP-logo-2010–2012.jpg" class="ml-20 marketImg">
                                     </li>        <li class="es-selectable col-md-3" data-value="11" style="display: none;">
-                                        <img src="/uploaz//ShopBrand/image/samsung.jpg" class="ml-20 marketImg">
+                                        <img src="/upload/uploaz//ShopBrand/image/samsung.jpg" class="ml-20 marketImg">
                                     </li>        <li class="es-selectable col-md-3" data-value="12" style="display: none;">
-                                        <img src="/uploaz//ShopBrand/image/asus-6630.svg" class="ml-20 marketImg">
+                                        <img src="/upload/uploaz//ShopBrand/image/asus-6630.svg" class="ml-20 marketImg">
                                     </li>        <li class="es-selectable col-md-3" data-value="13" style="display: none;">
-                                        <img src="/uploaz//ShopBrand/image/apple.jpg" class="ml-20 marketImg">
+                                        <img src="/upload/uploaz//ShopBrand/image/apple.jpg" class="ml-20 marketImg">
                                     </li>        <li class="es-selectable col-md-3" data-value="14" style="display: none;">
-                                        <img src="/uploaz//ShopBrand/image/acer.jpg" class="ml-20 marketImg">
+                                        <img src="/upload/uploaz//ShopBrand/image/acer.jpg" class="ml-20 marketImg">
                                     </li>        <li class="es-selectable col-md-3" data-value="15" style="display: none;">
-                                        <img src="/uploaz//ShopBrand/image/lenov.png" class="ml-20 marketImg">
+                                        <img src="/upload/uploaz//ShopBrand/image/lenov.png" class="ml-20 marketImg">
                                     </li>        <li class="es-selectable col-md-3" data-value="16" style="display: none;">
-                                        <img src="/uploaz//ShopBrand/image/xiaomi-Mi-red-banner-800x450.jpg" class="ml-20 marketImg">
+                                        <img src="/upload/uploaz//ShopBrand/image/xiaomi-Mi-red-banner-800x450.jpg" class="ml-20 marketImg">
                                     </li>        <li class="es-selectable col-md-3" data-value="17" style="display: none;">
-                                        <img src="/uploaz//ShopBrand/image/xiaomi-Mi-red-banner-800x450.jpg" class="ml-20 marketImg">
+                                        <img src="/upload/uploaz//ShopBrand/image/xiaomi-Mi-red-banner-800x450.jpg" class="ml-20 marketImg">
                                     </li>
                                     <span class="rmrl-read-more"> <a href="#" class="button">Показать больше...</a> </span><span class="rmrl-read-less" style="display: none;"> <a href="#" class="button">Показать меньше...</a> </span></ul>
                                 <input id="w36-hidden" type="hidden" name="brand" value="[]">

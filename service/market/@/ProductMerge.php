@@ -390,7 +390,7 @@ class ProductMerge extends ZFrame
             //$companyItem->amount = $catalog->amount;
             $companyItem->title = $company->title;
             if (\Dash\count($company->photo))
-                $companyItem->image = '/uploaz/eyuf/UserCompany/photo/' . $company->id . '/' . $company->photo[0];
+                $companyItem->image = '/upload/uploaz/eyuf/UserCompany/photo/' . $company->id . '/' . $company->photo[0];
             $companyItem->url = ZUrl::to([
                 'customer/markets/show',
                 'id' => $company->id
@@ -575,7 +575,7 @@ class ProductMerge extends ZFrame
         $item->images = [];
         if (is_array($shop_product->image))
             foreach ($shop_product->image as $image) {
-                $path = '/uploaz/eyuf/CoreProduct/images/' . $shop_product->id . '/' . $image;
+                $path = '/upload/uploaz/eyuf/CoreProduct/images/' . $shop_product->id . '/' . $image;
                 if (file_exists(Root . '/upload/' . $path))
                     $item->images[] = $path;
             }
@@ -813,7 +813,7 @@ class ProductMerge extends ZFrame
 
         /*if ($shop_product->image !== null)
             foreach ($shop_product->image as $image)
-                $productItem->images[] = '/uploaz/eyuf/CoreProduct/images/' . $shop_product->id . '/' . $image;*/
+                $productItem->images[] = '/upload/uploaz/eyuf/CoreProduct/images/' . $shop_product->id . '/' . $image;*/
         if (\Dash\count($productItem->images) == 0)
             $productItem->images[] = $this->defaultProductImage;
 
@@ -1511,11 +1511,11 @@ class ProductMerge extends ZFrame
         foreach ($allBrands as $brand) {
             $brand = $this->toObject(ShopBrand::class, $brand);
             $a = ZArrayHelper::getValue($brand->image, 0);
-            //vdd('/uploaz/' . App . '/ShopBrand/image/' . $brand->id . '/' . $a);
-            //$brand_data[$brand->id] = "<img  src='/uploaz/".App."/ShopBrand/image/".$brand->id."/$a' alt=' '>";
+            //vdd('/upload/uploaz/' . App . '/ShopBrand/image/' . $brand->id . '/' . $a);
+            //$brand_data[$brand->id] = "<img  src='/upload/uploaz/".App."/ShopBrand/image/".$brand->id."/$a' alt=' '>";
             $brand_data[$brand->id] = ZImageWidget::widget([
                 'config' => [
-                    'url' => '/uploaz/' . App . '/ShopBrand/image/' . $brand->id . '/' . $a,
+                    'url' => '/upload/uploaz/' . App . '/ShopBrand/image/' . $brand->id . '/' . $a,
                     'class' => "ml-20",
                     'width' => '90%',
                 ]
@@ -1896,7 +1896,7 @@ class ProductMerge extends ZFrame
                 'id' => $company->id ?? null
             ]);
             if (\Dash\count($company->photo))
-                $companyItem->image = '/uploaz/eyuf/UserCompany/photo/' . $company->id . '/' . $company->photo[0];
+                $companyItem->image = '/upload/uploaz/eyuf/UserCompany/photo/' . $company->id . '/' . $company->photo[0];
 
             $item = new ZProductItem();
             $companyItem->currency = $item->currency;

@@ -244,7 +244,7 @@ $productItem = Az::$app->market->product->product(28, 57);
 
                 </style>
                 <?php
-                $home = '/uploaz/eyuf/CoreAdvancedItem/image/';
+                $home = '/upload/uploaz/eyuf/CoreAdvancedItem/image/';
                 $slide_data = [];
                 $items = CoreAdvancedItem::find()->all();
                 foreach ($items as $value) {
@@ -290,7 +290,7 @@ $productItem = Az::$app->market->product->product(28, 57);
 
                 </style>
                 <?php
-                $home = '/uploaz/eyuf/CoreAdvancedItem/image/';
+                $home = '/upload/uploaz/eyuf/CoreAdvancedItem/image/';
                 $slide_data = [];
                 $items = CoreAdvancedItem::find()->all();
                 foreach ($items as $value) {
@@ -337,7 +337,7 @@ $productItem = Az::$app->market->product->product(28, 57);
 
                 </style>
                 <?php
-                $home = '/uploaz/eyuf/CoreAdvancedItem/image/';
+                $home = '/upload/uploaz/eyuf/CoreAdvancedItem/image/';
                 $slide_data = [];
                 $items = CoreAdvancedItem::find()->all();
                 foreach ($items as $value) {

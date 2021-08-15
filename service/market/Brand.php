@@ -254,7 +254,7 @@ class Brand extends ZFrame
             $brandItem->id = $brand->id;
             $brandItem->name = $brand->name ?? '';
 
-            $brandItem->image = '/uploaz/' . $this->bootEnv('appTitle') . "/ShopBrand/image/$brand->id/" . ZArrayHelper::getValue($brand->image, 0) ?? '';
+            $brandItem->image = '/upload/uploaz/' . $this->bootEnv('appTitle') . "/ShopBrand/image/$brand->id/" . ZArrayHelper::getValue($brand->image, 0) ?? '';
 
             $brandItem->url = '/shop/user/filter-common/main.aspx?brand_id=' . $brand->id;
 
@@ -276,7 +276,7 @@ class Brand extends ZFrame
                 ])->one();
             $brandItem->id = $brand->id;
             $brandItem->name = $brand->name ?? '';
-            $brandItem->image = '/uploaz/' . $this->bootEnv('appTitle') . "/ShopBrand/image/$brand->id/" . ZArrayHelper::getValue($brand->image, 0) ?? '';
+            $brandItem->image = '/upload/uploaz/' . $this->bootEnv('appTitle') . "/ShopBrand/image/$brand->id/" . ZArrayHelper::getValue($brand->image, 0) ?? '';
             return $brandItem;
         }
         else{

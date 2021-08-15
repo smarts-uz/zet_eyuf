@@ -125,7 +125,7 @@ if($bool){
                 <div class="col-md-3 px-4 py-2">
 
                     <a href="<?=$urleye?>">
-                        <img class="rounded w-100" height="auto" src="<?='/uploaz/' . App . '/' . $model->className . '/' . 'photos/' . $model->id . '/' . ZArrayHelper::getValue($model->photos, 0)?>" alt="img">
+                        <img class="rounded w-100" height="auto" src="<?='/upload/uploaz/' . App . '/' . $model->className . '/' . 'photos/' . $model->id . '/' . ZArrayHelper::getValue($model->photos, 0)?>" alt="img">
                     </a>
 
                 </div>

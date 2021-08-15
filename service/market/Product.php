@@ -400,7 +400,7 @@ class Product extends ZFrame
         if ($brand !== null) {
             $item->brand = $brand['name'] ?? 'not found';
             $brand['image'] = explode(',', $brand['image']);
-            $item->brandImage = '/uploaz/' . App . '/ShopBrand/image/' . $brand['id'] . '/' . ZArrayHelper::getValue($brand['image'], 0);
+            $item->brandImage = '/upload/uploaz/' . App . '/ShopBrand/image/' . $brand['id'] . '/' . ZArrayHelper::getValue($brand['image'], 0);
         }
 
         $item->title = $shop_product['title'];
@@ -790,7 +790,7 @@ class Product extends ZFrame
 //        $brand = $this->core_brands->where('id', $shop_product['shop_brand_id'])->first();
 //        if ($brand !== null) {
 //            $item->brand = $brand['name'] ?? 'not found';
-//            $item->brandImage = '/uploaz/' . App . '/ShopBrand/image/' . $brand['id'] . '/' . ZArrayHelper::getValue($brand['image'], 0);
+//            $item->brandImage = '/upload/uploaz/' . App . '/ShopBrand/image/' . $brand['id'] . '/' . ZArrayHelper::getValue($brand['image'], 0);
 //        }
 //
 //        $item->title = $shop_product['title'];
@@ -1117,7 +1117,7 @@ class Product extends ZFrame
             $companyItem->text_short = $company['text_short'];
             if (\Dash\count($company['photo']) > 0) {
                 $path = '/upload/imagez/mplace/' . ZArrayHelper::getValue($companyItem->photo, 0);
-                // '/uploaz/eyuf/UserCompany/photo/' . $company['id'] . '/' .
+                // '/upload/uploaz/eyuf/UserCompany/photo/' . $company['id'] . '/' .
                 if (file_exists($path))
                     $companyItem->photo = $path;
             }
@@ -1256,7 +1256,7 @@ class Product extends ZFrame
         $brand = $this->core_brands->where('id', $shop_product['shop_brand_id'])->first();
         if ($brand !== null) {
             $item->brand = $brand['name'] ?? 'not found';
-            $item->brandImage = '/uploaz/' . App . '/ShopBrand/image/' . $brand['id'] . '/' . ZArrayHelper::getValue($brand['image'], 0);
+            $item->brandImage = '/upload/uploaz/' . App . '/ShopBrand/image/' . $brand['id'] . '/' . ZArrayHelper::getValue($brand['image'], 0);
         }
         $item->title = $shop_product['title'];
         $item->text = $shop_product['text'];
@@ -1332,7 +1332,7 @@ class Product extends ZFrame
 
             if (is_array($imageslist))
                 foreach ($imageslist as $image) {
-                    $path = '/uploaz/' . App . '/ShopProduct/image/' . $shop_product['id'] . '/' . $image;
+                    $path = '/upload/uploaz/' . App . '/ShopProduct/image/' . $shop_product['id'] . '/' . $image;
                     if (file_exists(Root . '/upload/' . $path))
                         $images[] = $path;
                     else
@@ -1714,7 +1714,7 @@ class Product extends ZFrame
         $brand = $this->core_brands->where('id', $shop_product['shop_brand_id'])->first();
         if ($brand !== null) {
             $item->brand = $brand['name'] ?? 'not found';
-            $item->brandImage = '/uploaz/' . App . '/ShopBrand/image/' . $brand['id'] . '/' . ZArrayHelper::getValue($brand['image'], 0);
+            $item->brandImage = '/upload/uploaz/' . App . '/ShopBrand/image/' . $brand['id'] . '/' . ZArrayHelper::getValue($brand['image'], 0);
         }
         $item->title = $shop_product['title'];
         $item->text = $shop_product['text'];

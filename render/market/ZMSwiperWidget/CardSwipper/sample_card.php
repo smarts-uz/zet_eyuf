@@ -12,7 +12,7 @@ use zetsoft\models\core\CoreAdvancedItem;
 use zetsoft\widgets\cards\ZCard_1Widget;
 use zetsoft\widgets\market\ZMSwiperWidget;
 
-$home = '/uploaz/eyuf/CoreAdvancedItem/image/';
+$home = '/upload/uploaz/eyuf/CoreAdvancedItem/image/';
 $slide_data = [];
 $items = CoreAdvancedItem::find()->all();
 foreach ($items as $value) {

@@ -94,7 +94,7 @@ $addbtn = ZButtonWidget::widget([
 
                     <a href="<?= $urleye ?>">
                         <img class="rounded img-fluid" style="height: 120px;"
-                             src="<?= '/uploaz/' . App . '/' . $model->className . '/' . 'photo/' . $model->id . '/' . ZArrayHelper::getValue($model->photo, 0) ?>"
+                             src="<?= '/upload/uploaz/' . App . '/' . $model->className . '/' . 'photo/' . $model->id . '/' . ZArrayHelper::getValue($model->photo, 0) ?>"
                              alt="img">
                     </a>
 

@@ -89,7 +89,7 @@ class CategoryUmid extends ZFrame
             foreach ($brands as $brand) {
                 $menuItem = new MenuItem();
                 $menuItem->url = $brand->url;
-                $menuItem->image = '/uploaz/' . $this->bootEnv('appTitle') . "/ShopBrand/image/$brand->id/" . ZArrayHelper::getValue($brand->image, 0);
+                $menuItem->image = '/upload/uploaz/' . $this->bootEnv('appTitle') . "/ShopBrand/image/$brand->id/" . ZArrayHelper::getValue($brand->image, 0);
                 $menuItem->target = $brand->target;
                 $menuItem->tooltip = $brand->name;
                 $menuItem->location = $brand->location;

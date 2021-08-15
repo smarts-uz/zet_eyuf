@@ -138,7 +138,7 @@ echo ZNProgressWidget::widget([]);
                 <div class="row d-block">
                     <div class="px-4 pb-3">
 
-                        <img class="rounded w-100" height="auto" src="<?='/uploaz/' . App . '/' . $model->className . '/' . 'photos/' . $model->id . '/' . ZArrayHelper::getValue($model->photos, 0)?>" alt="rasm">
+                        <img class="rounded w-100" height="auto" src="<?='/upload/uploaz/' . App . '/' . $model->className . '/' . 'photos/' . $model->id . '/' . ZArrayHelper::getValue($model->photos, 0)?>" alt="rasm">
 
                     </div>
                   

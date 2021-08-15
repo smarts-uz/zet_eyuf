@@ -478,25 +478,25 @@ CSS;
                     if ($isDyno)
                         switch (count($match)) {
                             case 4:
-                                $this->_config['initialPreview'][] = Url::to("/uploaz/" . App . "/{$modelName}/{$match[1]}/$this->modelId/{$match[2]}/{$match[3]}/{$file}");
+                                $this->_config['initialPreview'][] = Url::to("/upload/uploaz/" . App . "/{$modelName}/{$match[1]}/$this->modelId/{$match[2]}/{$match[3]}/{$file}");
                                 break;
                             case 3:
-                                $this->_config['initialPreview'][] = Url::to("/uploaz/" . App . "/{$modelName}/{$match[1]}/$this->modelId/{$match[2]}/{$file}");
+                                $this->_config['initialPreview'][] = Url::to("/upload/uploaz/" . App . "/{$modelName}/{$match[1]}/$this->modelId/{$match[2]}/{$file}");
                                 break;
                             default:
-                                $this->_config['initialPreview'][] = Url::to("/uploaz/" . App . "/{$modelName}/{$match[1]}/$this->modelId/{$file}");
+                                $this->_config['initialPreview'][] = Url::to("/upload/uploaz/" . App . "/{$modelName}/{$match[1]}/$this->modelId/{$file}");
                                 break;
                         }
                     else
                         switch (count($match)) {
                             case 3:
-                                $this->_config['initialPreview'][] = Url::to("/uploaz/" . App . "/{$modelName}/{$match[0]}/$this->modelId/{$match[1]}/{$match[2]}/{$file}");
+                                $this->_config['initialPreview'][] = Url::to("/upload/uploaz/" . App . "/{$modelName}/{$match[0]}/$this->modelId/{$match[1]}/{$match[2]}/{$file}");
                                 break;
                             case 2:
-                                $this->_config['initialPreview'][] = Url::to("/uploaz/" . App . "/{$modelName}/{$match[0]}/$this->modelId/{$match[1]}/{$file}");
+                                $this->_config['initialPreview'][] = Url::to("/upload/uploaz/" . App . "/{$modelName}/{$match[0]}/$this->modelId/{$match[1]}/{$file}");
                                 break;
                             default:
-                                $this->_config['initialPreview'][] = Url::to("/uploaz/" . App . "/{$modelName}/{$match[0]}/$this->modelId/{$file}");
+                                $this->_config['initialPreview'][] = Url::to("/upload/uploaz/" . App . "/{$modelName}/{$match[0]}/$this->modelId/{$file}");
                                 break;
                         }
                     $this->_config['initialPreviewConfig'][] = ['caption' => $file, 'key' => $file];

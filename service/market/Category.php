@@ -105,7 +105,7 @@ class Category extends ZFrame
 
                     $id = $brand['id'];
 
-                    $menuItem->image = '/uploaz/' . $this->bootEnv('appTitle') . "/ShopBrand/image/$id/" . ZArrayHelper::getValue($brand['image'], 0);
+                    $menuItem->image = '/upload/uploaz/' . $this->bootEnv('appTitle') . "/ShopBrand/image/$id/" . ZArrayHelper::getValue($brand['image'], 0);
 
                     if (!file_exists($menuItem->image))
                         $menuItem->image = $this->defaultCateogryImage;
@@ -178,7 +178,7 @@ class Category extends ZFrame
             $id = $parentCategory->id;
             $image = $parentCategory->image;
 
-            $path = '/uploaz/' . $this->bootEnv('appTitle') . "/ShopBrand/image/$id/" . ZArrayHelper::getValue($image, 0);
+            $path = '/upload/uploaz/' . $this->bootEnv('appTitle') . "/ShopBrand/image/$id/" . ZArrayHelper::getValue($image, 0);
 
             if (file_exists($path))
                 $menuItem->image = $path;
@@ -268,7 +268,7 @@ class Category extends ZFrame
             $menuItem->id = $parent_category['id'];
             $menuItem->icon = $parent_category['icon'];
             $id = $parent_category['id'];
-            $path = '/uploaz/' . $this->bootEnv('appTitle') . "/ShopBrand/image/$id/" . ZArrayHelper::getValue($parent_category['image'], 0);
+            $path = '/upload/uploaz/' . $this->bootEnv('appTitle') . "/ShopBrand/image/$id/" . ZArrayHelper::getValue($parent_category['image'], 0);
             if (file_exists($path))
                 $menuItem->image = $path;
             else
@@ -618,7 +618,7 @@ class Category extends ZFrame
         foreach ($allBrands as $brand) {
             $images = [];
             foreach ($brand->image as $key => $img) {
-                $images[] = $baseUrl . '/uploaz/' . App . '/ShopBrand/image/' . $img;
+                $images[] = $baseUrl . '/upload/uploaz/' . App . '/ShopBrand/image/' . $img;
             }
             $brand->image = $images;
         }

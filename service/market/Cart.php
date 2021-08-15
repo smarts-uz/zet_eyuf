@@ -191,7 +191,7 @@ class Cart extends ZFrame
                 'id' => $company['id'] ?? null
             ]);
             if (\Dash\count($company['photo'])) {
-                $path = '/uploaz/eyuf/UserCompany/photo/' . $company['id'] . '/' . ZArrayHelper::getValue(json_decode($company['photo'], true), 0);
+                $path = '/upload/uploaz/eyuf/UserCompany/photo/' . $company['id'] . '/' . ZArrayHelper::getValue(json_decode($company['photo'], true), 0);
                 if (file_exists(Root . '/upload' . $path))
                     $companyItem->image = $path;
             }
@@ -497,7 +497,7 @@ class Cart extends ZFrame
                     $order->company_id = $company['id'];
 
                     if (\Dash\count($company['photo'])) {
-                        $path = '/uploaz/eyuf/UserCompany/photo/' . $company['id'] . '/' . ZArrayHelper::getValue(json_decode($company['photo'], true), 0);
+                        $path = '/upload/uploaz/eyuf/UserCompany/photo/' . $company['id'] . '/' . ZArrayHelper::getValue(json_decode($company['photo'], true), 0);
 
                         if (file_exists(Root . '/upload' . $path)) {
                             $order->company_image = $path;

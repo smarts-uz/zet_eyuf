@@ -92,7 +92,7 @@ class Auth extends ZFrame
         else {
 
             foreach ($photos as $key => $photo) {
-                $path = "/uploaz/User/photo/$user->id/$photo";
+                $path = "/upload/uploaz/User/photo/$user->id/$photo";
                 $return[] = $path;
             }
         }

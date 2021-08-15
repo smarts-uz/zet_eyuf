@@ -73,13 +73,13 @@ class ZMegaMenuWidget extends ZWidget
                <ul class="list-unstyled list-inline ">
  {Menus}
  <li class="list-inline-item text-center borr">
-  <img src="/uploaz/MenuPngs/5028.png"><a class="txt" href="{pay}">Оплата</a></li>
+  <img src="/upload/uploaz/MenuPngs/5028.png"><a class="txt" href="{pay}">Оплата</a></li>
   <li class="list-inline-item text-center borr">
-  <img src="/uploaz/MenuPngs/5027.png"><a class="txt" href="{track}">Доставка</a></li>
+  <img src="/upload/uploaz/MenuPngs/5027.png"><a class="txt" href="{track}">Доставка</a></li>
   <li class="list-inline-item text-center borr">
-  <img src="/uploaz/MenuPngs/5029.png"><a class="txt" href="{offerta}">Оферта</a></li>
+  <img src="/upload/uploaz/MenuPngs/5029.png"><a class="txt" href="{offerta}">Оферта</a></li>
   <li class="list-inline-item text-center borr">
-  <img src="/uploaz/MenuPngs/5030.png"><a class="txt" href="{contact}">Контакты</a></li>
+  <img src="/upload/uploaz/MenuPngs/5030.png"><a class="txt" href="{contact}">Контакты</a></li>
 
                             </ul>
                         </div>

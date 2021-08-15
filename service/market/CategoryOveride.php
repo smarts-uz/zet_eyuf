@@ -80,7 +80,7 @@ class CategoryOveride extends ZFrame
                     if (!isset($brand->url))
                         vdd($brand);
                     $menuItem->url = $brand->url;
-                    $menuItem->image = '/uploaz/' . $this->bootEnv('appTitle') . "/ShopBrand/image/$brand->id/" . ZArrayHelper::getValue($brand->image, 0);
+                    $menuItem->image = '/upload/uploaz/' . $this->bootEnv('appTitle') . "/ShopBrand/image/$brand->id/" . ZArrayHelper::getValue($brand->image, 0);
 
                     $menuItem->target = $brand->target;
                     $menuItem->tooltip = $brand->name;
@@ -123,7 +123,7 @@ class CategoryOveride extends ZFrame
             $menuItem->id = $parent_category['id'];
             $menuItem->icon = $parent_category['icon'];
             $id = $parent_category['id'];
-            $path = '/uploaz/' . $this->bootEnv('appTitle') . "/ShopBrand/image/$id/" . ZArrayHelper::getValue($parent_category['image'], 0);
+            $path = '/upload/uploaz/' . $this->bootEnv('appTitle') . "/ShopBrand/image/$id/" . ZArrayHelper::getValue($parent_category['image'], 0);
 
             if (file_exists($path))
                 $menuItem->image = $path;

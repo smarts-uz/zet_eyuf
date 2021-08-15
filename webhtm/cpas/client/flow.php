@@ -98,7 +98,7 @@ $offerPhoto = $offer->photo;
 
                     <a href="<?= $viewUrl ?>">
                         <img class="rounded img-fluid" style="height: 120px;"
-                             src="<?= '/uploaz/' . App . '/' . $offer->className . '/' . 'photo/' . $offer->id . '/' . ZArrayHelper::getValue($offerPhoto, 0)?>"
+                             src="<?= '/upload/uploaz/' . App . '/' . $offer->className . '/' . 'photo/' . $offer->id . '/' . ZArrayHelper::getValue($offerPhoto, 0)?>"
                              alt="img">
                     </a>
 

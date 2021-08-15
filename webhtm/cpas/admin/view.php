@@ -126,7 +126,7 @@ echo $this->require( '\webhtm\cpas\blocks\header.php');
                     <div class="px-4 pb-3">
 
                         <img class="rounded w-100" height="auto"
-                             src="<?= '/uploaz/' . App . '/' . $model->className . '/' . 'photo/' . $model->id . '/' . ZArrayHelper::getValue($model->photo, 0) ?>"
+                             src="<?= '/upload/uploaz/' . App . '/' . $model->className . '/' . 'photo/' . $model->id . '/' . ZArrayHelper::getValue($model->photo, 0) ?>"
                         />
 
                     </div>
@@ -263,7 +263,7 @@ echo $this->require( '\webhtm\cpas\blocks\header.php');
                                 'label' => Az::l('Скриншот лендинга'),
                                 'width' => '100px',
                                 'value' => function ($cpasLand, $key, $index, DataColumn $dataColumn) use ($cpasLands) {
-                                    $path = '/uploaz/' . App . '/' . $cpasLands->className . '/' . 'screen/' . ZArrayHelper::getValue($cpasLand, 'id') . '/' . ZArrayHelper::getValue(ZArrayHelper::getValue($cpasLand, 'screen'), 0) ;
+                                    $path = '/upload/uploaz/' . App . '/' . $cpasLands->className . '/' . 'screen/' . ZArrayHelper::getValue($cpasLand, 'id') . '/' . ZArrayHelper::getValue(ZArrayHelper::getValue($cpasLand, 'screen'), 0) ;
 
                                     return <<<HTML
                 <img src="$path" style="width: 100px; height: 60px;">          

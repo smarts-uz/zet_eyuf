@@ -238,7 +238,7 @@ use zetsoft\widgets\market\ZMSwiperWidget;
 
                 </style>
                 <?php
-                $home = '/uploaz/eyuf/CoreAdvancedItem/image/';
+                $home = '/upload/uploaz/eyuf/CoreAdvancedItem/image/';
                 $slide_data = [];
                 $items = Az::$app->market->product->allProducts();
                 foreach ($items as $value) {
@@ -285,7 +285,7 @@ use zetsoft\widgets\market\ZMSwiperWidget;
 
                 </style>
                 <?php
-                $home = '/uploaz/eyuf/CoreAdvancedItem/image/';
+                $home = '/upload/uploaz/eyuf/CoreAdvancedItem/image/';
                 $slide_data = [];
                 $items = CoreAdvancedItem::find()->all();
                 foreach ($items as $value) {
@@ -332,7 +332,7 @@ use zetsoft\widgets\market\ZMSwiperWidget;
 
                 </style>
                 <?php
-                $home = '/uploaz/eyuf/CoreAdvancedItem/image/';
+                $home = '/upload/uploaz/eyuf/CoreAdvancedItem/image/';
                 $slide_data = [];
                 $items = CoreAdvancedItem::find()->all();
                 foreach ($items as $value) {

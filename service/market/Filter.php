@@ -213,7 +213,7 @@ class Filter extends ZFrame
         foreach ($allBrands as $brand) {
             $brand_data[] = ZImageWidget::widget([
                 'config' => [
-                    'url' => '/uploaz/ShopBrand/image/' . $brand,
+                    'url' => '/upload/uploaz/ShopBrand/image/' . $brand,
                     'class' => "ml-20",
                     'width' => '90%',
                 ]
@@ -440,7 +440,7 @@ class Filter extends ZFrame
             $a = ZArrayHelper::getValue($brand->image, 0,);
             $brand_data[$brand['id']] = ZImageWidget::widget([
                 'config' => [
-                    'url' => '/uploaz/' . App . '/ShopBrand/image/' . $brand['id'] . '/' . $a,
+                    'url' => '/upload/uploaz/' . App . '/ShopBrand/image/' . $brand['id'] . '/' . $a,
                     'class' => "mr-20",
                     'width' => '100%',
                 ]

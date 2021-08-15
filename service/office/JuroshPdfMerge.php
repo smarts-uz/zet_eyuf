@@ -45,7 +45,7 @@ class JuroshPdfMerge extends ZFrame
 
         // call merge, output format `file`
         $pdf->merge('file', $out_pdf);
-        $merged_pdf_url = '/uploaz/market/'.$type.'-'.$ids.'.pdf';
+        $merged_pdf_url = '/upload/uploaz/market/'.$type.'-'.$ids.'.pdf';
         return $merged_pdf_url;
 
     }

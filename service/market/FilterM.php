@@ -223,7 +223,7 @@ class FilterM extends ZFrame
         foreach ($allBrands as $brand) {
             $brand_data[] = ZImageWidget::widget([
                 'config' => [
-                    'url' => '/uploaz/ShopBrand/image/' . $brand,
+                    'url' => '/upload/uploaz/ShopBrand/image/' . $brand,
                     'class' => "ml-20",
                     'width' => '90%',
                 ]
@@ -386,7 +386,7 @@ class FilterM extends ZFrame
             
             $brand_data[$brand['id']] = ZImageWidget::widget([
                 'config' => [
-                    'url' => '/uploaz/' . App . '/ShopBrand/image/' . $brand['id'] . '/' . $a,
+                    'url' => '/upload/uploaz/' . App . '/ShopBrand/image/' . $brand['id'] . '/' . $a,
                     'class' => "ml-20",
                     'width' => '90%',
                 ]

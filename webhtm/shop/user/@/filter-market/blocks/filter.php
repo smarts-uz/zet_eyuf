@@ -65,7 +65,7 @@ $allBrands = [
 foreach ($allBrands as $brand) {
 $brand_data[$brand] = ZImageWidget::widget([
 'config' => [
-'url' => '/uploaz/' /*. App*/ . '/ShopBrand/image/' /*. $brand->id . '/' */ . $brand,
+'url' => '/upload/uploaz/' /*. App*/ . '/ShopBrand/image/' /*. $brand->id . '/' */ . $brand,
 'class' => "ml-20",
 'width' => '90%',
 ]

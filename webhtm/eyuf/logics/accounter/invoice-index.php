@@ -57,7 +57,7 @@ Az::$app->App->eyuf->docs->statusAccount($scholarId);
 
 $userPhoto = $this->userIdentity()->photo;
 
-$userPhotoUrl = '/uploaz/eyuf/User/photo/' . $scholarId .'/'. ZArrayHelper::getValue($userPhoto, 0);
+$userPhotoUrl = '/upload/uploaz/eyuf/User/photo/' . $scholarId .'/'. ZArrayHelper::getValue($userPhoto, 0);
 
 if ($userPhoto === '')
     $userPhotoUrl = $this->userPhoto();
