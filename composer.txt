@@ -1,0 +1,16 @@
+
+composer require nesbot/carbon:2.20.0
+composer require yiisoft/yii2:2.0.31
+composer require parsecsv/php-parsecsv:1.2.0
+composer require 2amigos/yii2-file-upload-widget:~1.0
+composer require himiklab/yii2-sitemap-module: 1.2.1
+composer require phpoffice/phpword: 0.17.0
+
+composer require insolita/yii2-iconpicker:3.0.0
+composer require xdan/yii2-icon-select:1.0.5
+composer require dvixi/yii2-icon-select:1.0.0
+composer require kr0lik/yii2-fontawesome-iconpicker
+
+composer require dominus77/yii2-fontawesome-iconpicker:v2.0.1
+
+

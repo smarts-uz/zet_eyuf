@@ -1,0 +1,61 @@
+
+      webpub    -   /
+
+      websys     -  web
+      websys/crud   -   web/crud/shop-order/create.aspx
+
+      apipub    -   api
+      apisys    -   rest
+      apisys/crud   - rest/crud/shop-order/create.aspx
+
+-----------------------------------------------------------
+
+// Creates migration from connection ( with data | without data )
+migration/create    connection_name=db     data=true
+
+// Applies migration to connection ( with data | without data )
+migration/apply     connection_name=db2    data=true
+
+
+
+// Creates & Applies migration from connection to connection ( with data | without data )
+migration/copy      connection_name=db     target_conn=db2     data=true
+
+// Fixes Postgresql Sequences in connection
+migration/keys      connection_name=db
+
+
+model/run category
+model/run company|user
+model/run
+
+makeMenu/run  string $app=frontend string $module=admin table = null
+makeMenu/run  frontend admin
+
+frontend/control/admin
+frontend/viewers/admin
+
+
+-----------------------------------------------------------
+
+composer install --prefer-dist
+
+composer update --prefer-dist
+
+composer self-update
+
+composer require vlucas/phpdotenv:v3.3.3
+
+
+-----------------------------------------------------------
+Akbar
+
+composer require bower-asset/tribute:v3.7.3
+
+
+
+
+
+
+
+

@@ -1,0 +1,26 @@
+<?php
+define('ZET_START', microtime(true));
+if ($argc <= 1) {
+    echo "\033[33m";
+    echo "Method not given. Please run `php zet help` to get list of methods\033[0m";
+    return 0;
+}
+$argv1 = $argv2 = '';
+
+if (isset($argv[1])) {
+    $argv1 = $argv[1];
+}
+if (isset($argv[2])) {
+    $argv2 = [];
+    foreach ($argv as $key => $arg) {
+        if ($key > 1) {
+            $argv2[] = $arg;
+        }
+    }
+    $argv2 = implode('.', $argv2);
+}
+$return = shell_exec("php D:\Develop\Projects\asrorz\zetsoft\\excmd\asrorz.php root/zet/run $argv1 $argv2");
+echo $return . PHP_EOL;
+echo "\033[32mFinished in: " . (microtime(true) - ZET_START) . " seconds\033[0m";
+return 1;
+?>

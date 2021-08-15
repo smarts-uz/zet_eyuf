@@ -1,0 +1,114 @@
+<?php
+
+namespace zetsoft\inserts\eyuf;
+
+use zetsoft\system\actives\ZInsert;
+use zetsoft\system\Az;
+use zetsoft\system\kernels\ZMigration;
+use zetsoft\models\govs\GovsPosition;
+
+class GovsPositionInsert extends ZInsert
+{
+
+    public function run()
+    {
+
+        $this->model = new GovsPosition();
+
+        $this->model->id = 5;
+        $this->model->sort = null;
+        $this->model->name = 'Старший учитель ';
+        $this->model->title = '';
+        $this->model->tranz = null;
+        $this->model->accept = null;
+        $this->model->active = 1;
+        $this->save();
+
+
+        $this->model = new GovsPosition();
+
+        $this->model->id = 4;
+        $this->model->sort = null;
+        $this->model->name = 'Профессор ';
+        $this->model->title = '';
+        $this->model->tranz = null;
+        $this->model->accept = null;
+        $this->model->active = 1;
+        $this->save();
+
+
+        $this->model = new GovsPosition();
+
+        $this->model->id = 2;
+        $this->model->sort = null;
+        $this->model->name = 'Проректор ';
+        $this->model->title = '';
+        $this->model->tranz = null;
+        $this->model->accept = null;
+        $this->model->active = 1;
+        $this->save();
+
+
+        $this->model = new GovsPosition();
+
+        $this->model->id = 8;
+        $this->model->sort = null;
+        $this->model->name = 'Учитель';
+        $this->model->title = '';
+        $this->model->tranz = null;
+        $this->model->accept = null;
+        $this->model->active = 1;
+        $this->save();
+
+
+        $this->model = new GovsPosition();
+
+        $this->model->id = 9;
+        $this->model->sort = null;
+        $this->model->name = 'Учиник ';
+        $this->model->title = '';
+        $this->model->tranz = null;
+        $this->model->accept = null;
+        $this->model->active = 1;
+        $this->save();
+
+
+        $this->model = new GovsPosition();
+
+        $this->model->id = 1;
+        $this->model->sort = null;
+        $this->model->name = 'Ректор ';
+        $this->model->title = '';
+        $this->model->tranz = null;
+        $this->model->accept = null;
+        $this->model->active = 1;
+        $this->save();
+
+
+        $this->model = new GovsPosition();
+
+        $this->model->id = 3;
+        $this->model->sort = null;
+        $this->model->name = 'Заместитель ректора ';
+        $this->model->title = '';
+        $this->model->tranz = null;
+        $this->model->accept = null;
+        $this->model->active = 1;
+        $this->save();
+
+
+        $this->model = new GovsPosition();
+
+        $this->model->id = 10;
+        $this->model->sort = null;
+        $this->model->name = 'Студент ';
+        $this->model->title = '';
+        $this->model->tranz = null;
+        $this->model->accept = null;
+        $this->model->active = 1;
+        $this->save();
+
+
+    }
+
+}

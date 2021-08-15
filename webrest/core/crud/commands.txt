@@ -1,0 +1,18 @@
+sort       = <URL>?sort=id           @example  http://market.zetsoft.uz/rest/user/index.aspx?sort=-id
+query      = <URL>?query[id]=5       @example  http://market.zetsoft.uz/rest/user/index.aspx?query[id]=5
+                                     @example  http://market.zetsoft.uz/rest/user/index.aspx?query[id]=2|4
+                                     @example  http://market.zetsoft.uz/rest/user/index.aspx?query[name]=<operator>||zor
+ OPERATOR LIST
+ ------------------
+ like , => , =< , < , >
+ ------------------
+
+
+pagination = <URL>?per-page=2&page=1 @example  http://market.zetsoft.uz/rest/user/index.aspx?per-page=2&page=1
+select     = <URL>?select=id,name    @example  http://market.zetsoft.uz/rest/user/index.aspx?select=id,name
+relation   = <URL>?with[<modelName>]=id,name if you want to get all columns of relation you can use with[<modelName>]
+    @example http://market.zetsoft.uz/rest/user/index.aspx?with[UserCompany]=id,name&query[user_company_id]=2&with[placeRegion]=id,name
+
+cache      = <URL>?cache=<bool|int>, @example  http://market.zetsoft.uz/rest/user/index.aspx?cache=true
+groupBy    = <URL>?orderBy=<string>  @example  http://market.zetsoft.uz/rest/user/index.aspx?groupBy=id,name
+indexBy    = <URL>?indexBy=<string>  @example  http://market.zetsoft.uz/rest/user/index.aspx?indexBy=id

@@ -1,0 +1,160 @@
+
+{
+    "number1": "5",
+    "id": "566933",
+    "id_odobreniya": "0",
+    "productname": "Minoxidil Premium",
+    "count_p": "5",
+    "cost_p": "495000",
+    "nameclient": "Мирзаев Аброр",
+    "telephone": "932379997",
+    "h_tel": "",
+    "region": "САМАРҚАНД ВИЛОЯТИ",
+    "district": "САМАРҚАНД ШАҲРИ",
+    "address": "Альбухорийга якин пост (Куширабот тумани Паркент маххаласи Зорнисо кучаси 13 уй)",
+    "statusdate": "2020-06-19 10:00:03",
+    "datereg": "2020-06-15 01:54:17",
+    "source": "Marketing Facebook",
+    "operator": "operator76"
+},
+{},
+{}          
+]
+
+
+/---------------------------------------------------------------------------------
+
+
+add-order.aspx
+
+# Params
+catalogId=344
+userName=Sardor Shodmonov
+userPhone=9983535353453
+
+# Auth
+login=tl
+password=23524tg234h
+
+# Return
+| OrderID
+
+{
+    id:4141,
+    clientLogin:13gdsfgdsfgsdf,
+    clientPass:13gdsfgdsfgsdf,
+
+}
+
+-------------------------------------
+
+get-order.aspx
+
+# Params
+orderId=344
+
+# Auth
+login=tl
+password=23524tg234h
+
+# Return
+
+public $code;
+public $user_id;
+public $contact_name;
+public $contact_phone;
+public $date_preferred;
+public $comment_user;
+public $operator;
+public $comment_agent;
+public $shop_reject_cause_id;
+public $status_callcenter;
+public $status_logistics;
+public $history_callcenter;
+public $history_logistics;
+public $date_return;
+public $date_transfer;
+public $date_approve;
+public $date_deliver;
+public $weight;
+public $weight_plan;
+public $size;
+public $volume;
+public $price;
+public $payment_type;
+public $created_at;
+public $modified_at;
+    
+{
+    id:4141
+}
+
+
+-------------------------------------
+
+get-status.aspx
+
+# Params
+orderId=344
+
+# Return
+public $status_callcenter;
+public $status_logistics;
+public $history_callcenter;
+public $history_logistics;
+
+-------------------------------------
+
+get-user.aspx
+
+# Params
+orderId=131
+
+# Auth -> seller -> is_cpa=true
+login=tl
+password=23524tg234h
+
+# Get
+user_company_id
+
+# Verify
+user_company_id === order -> userCompanyId
+
+# Return
+order ->getIdentity
+
+phone
+password
+
+
+
+
+/---------------------------------------------------------------------------------
+
+#Order List into Cart
+http://eyuf.zetsoft.uz/api/cart/order.aspx
+Method : GET
+Params : No Params
+Used Session
+
+
+#company catalog_list
+
+http://eyuf.zetsoft.uz/api/catalog/my-catalog.aspx?email=mycomp@gmail.com&password=mycomp@gmail.com
+
+Method: GET
+Params : amail, password
+baseAuth
+
+
+
+
+
+
+
+
+
+
+
+
+
