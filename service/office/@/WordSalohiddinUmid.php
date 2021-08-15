@@ -47,7 +47,7 @@ class WordSalohiddinUmid extends ZFrame
     public $project_name;
     public $section;
     public $execute;
-    public $file_path = '/excelz/' . App;
+    public $file_path = '/upload/excelz/' . App;
     public $shipment;
     public $order;
     public $orderItem;

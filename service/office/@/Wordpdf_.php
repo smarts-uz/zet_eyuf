@@ -52,7 +52,7 @@ class Wordpdf_ extends ZFrame
      * @var string
      * Yaratilgan PDF file lar shu path ga saqlanadi
      */
-    public $file_path = '/excelz/' . App;
+    public $file_path = '/upload/excelz/' . App;
 
     /**
      * @var array
