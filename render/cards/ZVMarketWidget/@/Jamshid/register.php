@@ -85,7 +85,7 @@ if ($this->modelForm($model) === true) {
 
         <div class="login-logo">
             <a href="/" target="_blank">
-                <img src="/imagez/<?= App ?>/eyu-1.jpg" alt="ZCore.uz">
+                <img src="/upload/imagez/<?= App ?>/eyu-1.jpg" alt="ZCore.uz">
             </a>
         </div>
 

@@ -88,7 +88,7 @@ class Auth extends ZFrame
         $return = [];
 
         if (empty($photos) || $photos !== null)
-            $return[] = '/imagez/default/user/avatar_circle_blue.png';
+            $return[] = '/upload/imagez/default/user/avatar_circle_blue.png';
         else {
 
             foreach ($photos as $key => $photo) {
@@ -110,7 +110,7 @@ class Auth extends ZFrame
 
         //  vd($exists);
         if (!$exists)
-            $img = '/imagez/default/user/avatar_circle_blue.png';
+            $img = '/upload/imagez/default/user/avatar_circle_blue.png';
 
         return $img;
     }

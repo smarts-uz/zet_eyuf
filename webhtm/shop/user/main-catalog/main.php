@@ -146,7 +146,7 @@ require Root . '/webhtm/block/navbar/main.php';
 
       <div class="d-flex align-items-center">
         <img width="100" height="100" class="mr-3 img-fluid img-primary"
-             src="<?= '/imagez/mplace/' . ZArrayHelper::getValue($company->photo, 0)
+             src="<?= '/upload/imagez/mplace/' . ZArrayHelper::getValue($company->photo, 0)
              ?>" alt="">
         <span class="fp-26 font-weight-bold">
                     <?= $company->name ?>

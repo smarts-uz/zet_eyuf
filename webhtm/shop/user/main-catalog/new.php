@@ -71,7 +71,7 @@ require Root . '/webhtm/block/navbar/main.php';
 
         <div class="col-md-12 d-flex px-5 border shadow">
             <img class="bg-danger img-fluid"
-                 src="<?= '/imagez/mplace/' . ZArrayHelper::getValue($company->photo, 0)
+                 src="<?= '/upload/imagez/mplace/' . ZArrayHelper::getValue($company->photo, 0)
                  ?>" alt="">
             <span class="fp-26 font-weight-bold mt-5">
                     <?= $company->name ?>

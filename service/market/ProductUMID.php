@@ -491,7 +491,7 @@ class ProductUMID extends ZFrame
             $companyItem->text = $company['text'];
             if (\Dash\count($company['photo']) > 0) {
 
-                $path = '/imagez/mplace/' . ZArrayHelper::getValue($companyItem->photo, 0);
+                $path = '/upload/imagez/mplace/' . ZArrayHelper::getValue($companyItem->photo, 0);
 
                 // '/uploaz/eyuf/UserCompany/photo/' . $company['id'] . '/' .
                 if (file_exists($path))
@@ -808,7 +808,7 @@ class ProductUMID extends ZFrame
                     $path = '/uploaz/' . App . '/ShopProduct/image/' . $shop_product['id'] . '/' . $image;
                     if (file_exists(Root . '/upload/' . $path))
                         $images[] = $path;
-                    else $images[] = '/imagez/default/product/noimage.jpg';
+                    else $images[] = '/upload/imagez/default/product/noimage.jpg';
                 }
             else {
                 for ($i = 0; $i < 4; $i++) {

@@ -306,7 +306,7 @@ CSS,
         }
 
         if (empty($this->_config['content']))
-            $this->_config['content'] = "<div class=\"zlogo\"><img src=\"/imagez/eyuf/logo1.jpg\" width=\"{$this->_config['content.img.width']}\"></div>";
+            $this->_config['content'] = "<div class=\"zlogo\"><img src=\"/upload/imagez/eyuf/logo1.jpg\" width=\"{$this->_config['content.img.width']}\"></div>";
 
 
 

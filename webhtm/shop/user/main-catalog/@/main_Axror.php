@@ -131,7 +131,7 @@ require Root . '/webhtm/block/navbar/main.php';
             <div class="mx-auto d-flex">
                 <!--brand rasmi turadi-->
                 <!--<img width="100" height="100" class="mr-3 img-fluid"
-                     src="<? /*= '/imagez/mplace/' . ZArrayHelper::getValue($company->photo, 0) */
+                     src="<? /*= '/upload/imagez/mplace/' . ZArrayHelper::getValue($company->photo, 0) */
                 ?>" alt="">-->
                 <h1><?= $company->name ?></h1>
             <?/*vdd($company)*/?>
@@ -184,7 +184,7 @@ require Root . '/webhtm/block/navbar/main.php';
 
         <section class="row m-4">
             <div class="col-lg-6 bg-white d-flex justify-content-center">
-                <img class="img-fluid" src="<?= '/imagez/mplace/' . ZArrayHelper::getValue($company->photo, 0) ?>"/>
+                <img class="img-fluid" src="<?= '/upload/imagez/mplace/' . ZArrayHelper::getValue($company->photo, 0) ?>"/>
             </div>
             <div class="col-lg-6 d-flex align-items-center">
                 <div class="fp-18">

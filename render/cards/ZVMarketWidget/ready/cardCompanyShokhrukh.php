@@ -28,7 +28,7 @@ if (!isset($col))
     <div class="card m-0 rounded-0 h-100">
         <div class="d-flex justify-content-center align-items-center p-3">
             <a href="<?= $item->url ?> " class="brand-img"
-               style="background-image: url('<?= '/imagez/mplace/'.ZArrayHelper::getValue($item->photo, 0) ?>')">
+               style="background-image: url('<?= '/upload/imagez/mplace/'.ZArrayHelper::getValue($item->photo, 0) ?>')">
             </a>
         </div>
         <div class="card-body text-center p-2">
